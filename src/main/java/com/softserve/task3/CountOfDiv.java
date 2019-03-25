@@ -1,4 +1,4 @@
-package task3;
+package com.softserve.task3;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -52,7 +52,7 @@ public class CountOfDiv {
      *
      * @return List of numbers with largest number of dividers
      */
-    public List<Integer> countDivOfNumber() {
+    private List<Integer> countDivOfNumber() {
         List<Integer> listOfDiv = new ArrayList<>();
 
         int length = 10000;

@@ -1,4 +1,4 @@
-package task4;
+package com.softserve.task4;
 
 /**
  * Uses Euclid's algorithm to get the highest divider of two numbers.

@@ -1,4 +1,4 @@
-package task2;
+package com.softserve.task2;
 
 /**
  * Reverses number.
