@@ -1,5 +1,6 @@
 package com.softserve.task1;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -24,10 +25,10 @@ public class NumberContainsDigitThreeTest {
 
     @Test(dataProvider = "addData")
     public void numberContainsThree(boolean expected, int arg) {
-//        NumberContainsDigitThree obj = new NumberContainsDigitThree();
-//
-//        boolean actual = obj.numberContainsThree(arg);
-//
-//        Assert.assertEquals(actual, expected);
+        NumberContainsDigitThree obj = new NumberContainsDigitThree(arg);
+
+        boolean actual = obj.numberContainsThree();
+
+        Assert.assertEquals(actual, expected);
     }
 }
