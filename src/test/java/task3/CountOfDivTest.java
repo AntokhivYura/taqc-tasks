@@ -1,5 +1,6 @@
 package task3;
 
+import com.softserve.task3.CountOfDiv;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

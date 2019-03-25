@@ -1,4 +1,4 @@
-package task1;
+package com.softserve.task1;
 
 /**
  * Checks if square of the number contains digit three.

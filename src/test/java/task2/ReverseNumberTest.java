@@ -1,5 +1,6 @@
 package task2;
 
+import com.softserve.task2.ReverseNumber;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
