@@ -5,7 +5,7 @@ package com.softserve.task4;
  * @author Yrii Antokhiv
  * @version 1.0
  */
-public class EuclidAlgorithm {
+class EuclidAlgorithm {
 
     /**
      * Uses Euclid's algorithm to get
@@ -15,7 +15,7 @@ public class EuclidAlgorithm {
      * @param m second number
      * @return highest divider
      */
-    public int getHighestDiv(int n, int m) {
+    int getHighestDiv(int n, int m) {
 
         if (m > n) {
             if ((m % n) == 0) {
@@ -30,5 +30,9 @@ public class EuclidAlgorithm {
                 return getHighestDiv(m, n % m);
             }
         }
+    }
+
+    void printAnswer(int arg0, int arg1, int divider){
+        System.out.printf("Highest divider for %d and %d is %d",arg0,arg1,divider);
     }
 }
