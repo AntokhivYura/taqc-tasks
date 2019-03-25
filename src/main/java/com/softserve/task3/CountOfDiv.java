@@ -9,14 +9,14 @@ import java.util.List;
  * @author Yurii Antokhiv
  * @version 1.0
  */
-public class CountOfDiv {
+class CountOfDiv {
 
     /**
      * Return the numbers with the largest number of dividers.
      *
      * @return <code> List</code> of numbers with largest number of dividers
      */
-    public List<Integer> getNumWithMaxDivider() {
+    List<Integer> getNumWithMaxDivider() {
         List<Integer> listOfAllDividers = countDivOfNumber();
 
         int max = Collections.max(listOfAllDividers);
@@ -29,20 +29,6 @@ public class CountOfDiv {
             }
         }
         return numbersWithMaxDiv;
-    }
-
-    /**
-     * Print all numbers with largest number of dividers.
-     *
-     * @param listOfDiv list of numbers with largest number of dividers
-     */
-    public void printNumbers(final List<Integer> listOfDiv) {
-        System.out.print("Numbers from 1 to 10000 "
-                + "with max count of dividers is ");
-
-        for (Integer elem : listOfDiv) {
-            System.out.print(elem + " ");
-        }
     }
 
     /**
@@ -68,5 +54,19 @@ public class CountOfDiv {
             listOfDiv.add(count);
         }
         return listOfDiv;
+    }
+
+    /**
+     * Print all numbers with largest number of dividers.
+     *
+     * @param listOfDiv list of numbers with largest number of dividers
+     */
+    void printNumbers(final List<Integer> listOfDiv) {
+        System.out.print("Numbers from 1 to 10000 "
+                + "with max count of dividers is ");
+
+        for (Integer elem : listOfDiv) {
+            System.out.print(elem + " ");
+        }
     }
 }

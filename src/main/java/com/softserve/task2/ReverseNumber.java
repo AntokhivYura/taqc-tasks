@@ -6,22 +6,32 @@ package com.softserve.task2;
  * @version 1.0
  */
 
-public class ReverseNumber {
+class ReverseNumber {
+    private int number;
+
+    ReverseNumber(int number) {
+        this.number = number;
+    }
 
     /**
      * Reverses the inputted number.
      *
-     * @param n input number
      * @return reversed inputted number
      */
-    public int reverseNumber(int n) {
+    int reverseNumber() {
+        int digit = number;
         int reverse = 0;
 
-        while (n != 0) {
+        while (digit != 0) {
             reverse = reverse * 10;
-            reverse = reverse + n % 10;
-            n = n / 10;
+            reverse = reverse + digit % 10;
+            digit = digit / 10;
         }
         return reverse;
     }
+
+    void printAnswer(int reversedNumber){
+        System.out.printf("%d after reversing become %d",number,reversedNumber);
+    }
+
 }

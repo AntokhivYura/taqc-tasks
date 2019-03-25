@@ -5,25 +5,33 @@ package com.softserve.task1;
  * @author Yurii Antokhiv
  * @version 1.0
  */
-public class NumberContainsDigitThree {
+class NumberContainsDigitThree {
+    private int number;
+
+    NumberContainsDigitThree(int number) {
+        this.number = number;
+    }
 
     /**
      * Returns true if and only if square of this number
      * contains digit three.
      *
-     * @param n input number
      * @return true if square of the number contains digit three
      *         , false if not
      */
-    public boolean numberContainsThree(int n) {
-        n = n * n;
+    boolean numberContainsThree() {
+        int digit = number;
+        digit = digit * digit;
 
-        while (n != 0) {
-            if (n % 10 == 3) {
+        while (digit != 0) {
+            if (digit % 10 == 3) {
                 return true;
             }
-            n /= 10;
+            digit /= 10;
         }
         return false;
+    }
+    void printAnswer(boolean containsThree){
+        System.out.printf("Square of the number %d contains digit three ? %b",number,containsThree);
     }
 }
