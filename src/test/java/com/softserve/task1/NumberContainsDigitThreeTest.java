@@ -1,6 +1,5 @@
-package task1;
+package com.softserve.task1;
 
-import com.softserve.task1.NumberContainsDigitThree;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

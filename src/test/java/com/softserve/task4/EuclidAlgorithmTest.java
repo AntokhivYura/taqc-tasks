@@ -1,6 +1,5 @@
-package task4;
+package com.softserve.task4;
 
-import com.softserve.task4.EuclidAlgorithm;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
