@@ -32,7 +32,16 @@ class EuclidAlgorithm {
         }
     }
 
-    void printAnswer(int arg0, int arg1, int divider){
-        System.out.printf("Highest divider for %d and %d is %d",arg0,arg1,divider);
+
+    /**
+     * Prints highest divider to console.
+     *
+     * @param arg0    first number
+     * @param arg1    second number
+     * @param divider highest div for two numbers
+     */
+    void printAnswer(int arg0, int arg1, int divider) {
+        System.out.printf("Highest divider for "
+                + "%d and %d is %d", arg0, arg1, divider);
     }
 }

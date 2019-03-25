@@ -7,8 +7,16 @@ package com.softserve.task2;
  */
 
 class ReverseNumber {
+    /**
+     * The number to operate with.
+     */
     private int number;
 
+    /**
+     * Constructor for ReverseNumber class.
+     *
+     * @param number number to operate with
+     */
     ReverseNumber(int number) {
         this.number = number;
     }
@@ -30,8 +38,13 @@ class ReverseNumber {
         return reverse;
     }
 
-    void printAnswer(int reversedNumber){
-        System.out.printf("%d after reversing become %d",number,reversedNumber);
+    /**
+     * Prints reversed number to console.
+     *
+     * @param reversedNumber reversed number
+     */
+    void printAnswer(final int reversedNumber) {
+        System.out.printf("%d after reversing "
+                + "become %d", number, reversedNumber);
     }
-
 }
